@@ -1,0 +1,5 @@
+<ul>
+   <% @artists.all.each do |a| %>
+      <li><%= "#{a.name} - #{a.songs.count} #{pluralize(a.songs.count, "song")}" %></li>
+   <% end %>
+</ul>
